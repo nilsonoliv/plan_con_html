@@ -55,63 +55,63 @@
         const dbRoadmap = [
             {
                 id: 1, titulo: "Alfabetização Tecnológica", meses: "Mês 1 a 3", color: "blue",
-                objetivo: " Entender a lógica por trás da computação e gramática base.",
+                objetivo: " Construir a base de raciocínio lógico e gramatical.",
                 semana: [
-                    { dia: "Seg", mat: "Lógica de Programação (Operadores, Variáveis e Tipos)." },
-                    { dia: "Ter", mat: "Português (Ortografia e Acentuação)." },
-                    { dia: "Qua", mat: "Lógica de Programação (Estruturas Condicionais e de Repetição)." },
-                    { dia: "Qui", mat: " Português (Morfologia e Classes de Palavras)." },
+                    { dia: "Seg", mat: "Tecnologia da Informação)." },
+                    { dia: "Ter", mat: "Língua Portuguesa." },
+                    { dia: "Qua", mat: "Tecnologia da Informação." },
+                    { dia: "Qui", mat: "Língua Portuguesa." },
                     { dia: "Sex", mat: "Matemática Financeira" }
                 ],
-                metas: ["Estruturas de Controle", "POO Básica", "Joins em SQL", "Sintaxe da Oração"]
+                metas: ["150 questões de Lógica de Programação.", "Finalizar 100% da teoria de Gramática Básica (Morfologia).", "Manter 100% de frequência nas 12 semanas iniciais (Construção de Hábito)"]
             },
             {
-                id: 2, titulo: "Consolidação e Web", meses: "Mês 7 a 12", color: "indigo",
-                objetivo: "Expandir para Python, Web e legislações específicas.",
+                id: 2, titulo: "Fundamentos de Dados e Texto", meses: "Mês 4 a 6", color: "indigo",
+                objetivo: "Dominar a organização da informação e interpretação profunda.",
                 semana: [
-                    { dia: "Seg", mat: "Python (Pandas/NumPy)" },
-                    { dia: "Ter", mat: "Dev Web (REST/APIs)" },
-                    { dia: "Qua", mat: "Engenharia de Software" },
-                    { dia: "Qui", mat: "Ética e LGPD" },
-                    { dia: "Sex", mat: "Inglês e Revisão Java" }
+                    { dia: "Seg", mat: "Tecnologia da Informação" },
+                    { dia: "Ter", mat: "Língua Portuguesa" },
+                    { dia: "Qua", mat: "Tecnologia da Informação" },
+                    { dia: "Qui", mat: "Língua Portuguesa" },
+                    { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["Análise de Dados", "Microsserviços", "UML", "LGPD Integral"]
+                metas: ["Dominar os conceitos de Normalização de Dados (1FN, 2FN e 3FN).s", "Alcançar > 80% de acerto em questões de Interpretação de Texto.", "Finalizar o mapeamento de Estruturas de Dados (Pilhas, Filas e Listas).", "Resolver 200 questões integradas de Português + TI."]
             },
             {
-                id: 3, titulo: "Aprofundamento Prático", meses: "Mês 13 a 18", color: "purple",
-                objetivo: "Conectar sistemas e focar em estudo reverso.",
+                id: 3, titulo: "Programação e Finanças", meses: "Mês 7 a 9", color: "purple",
+                objetivo: "Codificação orientada à objeto e domínio do valor do dinheiro..",
                 semana: [
-                    { dia: "Seg", mat: "Arquitetura e Cloud" },
-                    { dia: "Ter", mat: "Agilidade (Scrum/Kanban)" },
-                    { dia: "Qua", mat: "Comportamentos Digitais" },
-                    { dia: "Qui", mat: "Estudo Reverso (Questões)" },
-                    { dia: "Sex", mat: "Estudo Reverso (Questões)" }
+                    { dia: "Seg", mat: "Tecnologia da Informação" },
+                    { dia: "Ter", mat: "Matemática Financeira" },
+                    { dia: "Qua", mat: "Tecnologia da Informação" },
+                    { dia: "Qui", mat: "Matemática Financeira" },
+                    { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["MVC e SOA", "Cultura Agile", "Mapeamento Cesgranrio"]
+                metas: ["Codificar 10 algoritmos básicos em Java para fixar sintaxe OO.", "Resolver 150 questões de Sistemas de Amortização (SAC/PRICE).", "Dominar comandos SQL de Join e Agrupamento (GroupBy/Having).", "Realizar o primeiro Simulado Parcial (TI + Mat. Financeira)."]
             },
             {
-                id: 4, titulo: "Lapidação e Simulados", meses: "Mês 19 a 24", color: "green",
-                objetivo: "Velocidade de prova e memorização de frameworks.",
+                id: 4, titulo: "O Ecossistema Bancário Moderno", meses: "Mês 10 a 12", color: "green",
+                objetivo: "Ciência de dados aplicada e vocabulário técnico.",
                 semana: [
-                    { dia: "Seg", mat: "Governança (ITIL/COBIT)" },
-                    { dia: "Ter", mat: "Estatística e Probabilidade" },
-                    { dia: "Qua", mat: "Revisão Geral" },
-                    { dia: "Qui", mat: "Simulado Completo" },
-                    { dia: "Sex", mat: "Correção de Simulado" }
+                    { dia: "Seg", mat: "Tecnologia da Informação" },
+                    { dia: "Ter", mat: "Noções de Probabilidade e Estatística" },
+                    { dia: "Qua", mat: "Tecnologia da Informação" },
+                    { dia: "Qui", mat: "Língua Inglesa" },
+                    { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["Processos ITIL 4", "Distribuição Binomial", "Gestão do Tempo"]
+                metas: ["Manipular DataFrames em Python usando bibliotecas Pandas/NumPy.", "Criar uma lista de 200 termos técnicos em Inglês recorrentes na Cesgranrio.", "Resolver 100 questões de Estatística Descritiva.", "Realizar o segundo Simulado Parcial (TI + Probabilidade + Inglês).","Finalizar a leitura de todos os tópicos de Ciência de Dados do edital."]
             },
             {
-                id: 5, titulo: "xxxxxxxx", meses: "xxxxxxx", color: "green",
-                objetivo: "xxxxxxxxxxxxxxxxxxxx.",
+                id: 5, titulo: "Arquitetura e Nuvem", meses: "Mês 13 a 15", color: "warm-gray",
+                objetivo: "Visão sistêmica, escalabilidade e probabilidade avançada.",
                 semana: [
-                    { dia: "Seg", mat: "Governança (ITIL/COBIT)" },
-                    { dia: "Ter", mat: "Estatística e Probabilidade" },
-                    { dia: "Qua", mat: "Revisão Geral" },
-                    { dia: "Qui", mat: "Simulado Completo" },
-                    { dia: "Sex", mat: "Correção de Simulado" }
+                    { dia: "Seg", mat: "Tecnologia da Informação" },
+                    { dia: "Ter", mat: "Noções de Probabilidade e Estatística" },
+                    { dia: "Qua", mat: "Tecnologia da Informação" },
+                    { dia: "Qui", mat: "Noções de Probabilidade e Estatística" },
+                    { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["Processos ITIL 4", "Distribuição Binomial", "Gestão do Tempo"]
+                metas: ["Diferenciar com 100% de precisão modelos IaaS, PaaS e SaaS.", "Resolver 100 questões de Probabilidade Condicional e Teorema de Bayes.", "Mapear os Status Codes HTTP e Verbos REST mais cobrados.", "Realizar o terceiro Simulado Parcial (TI + Probabilidade Avançada).", "Finalizar a leitura de todos os tópicos de Arquitetura e Nuvem do edital.","Consolidar o entendimento de Microservices vs Monólitos."]
             },
             {
                 id: 6, titulo: "xxxxxxxx", meses: "xxxxxxx", color: "green",
