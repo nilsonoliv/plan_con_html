@@ -37,7 +37,8 @@
             checklist: [], // Array de IDs de tarefas do checklist marcadas como feitas
             escada: [
                 { id: 1, status: 'ativo' }, { id: 2, status: 'bloqueado' },
-                { id: 3, status: 'bloqueado' }, { id: 4, status: 'bloqueado' }
+                { id: 3, status: 'bloqueado' }, { id: 4, status: 'bloqueado' },
+                { id: 5, status: 'bloqueado' }, { id: 6, status: 'bloqueado' }
             ],
             simulados: [{ data: "Diagnóstico", nota: 35 }], // Histórico para o Chart.js
             swot: {
@@ -63,7 +64,7 @@
                     { dia: "Qui", mat: "Língua Portuguesa." },
                     { dia: "Sex", mat: "Matemática Financeira" }
                 ],
-                metas: ["150 questões de Lógica de Programação.", "Finalizar 100% da teoria de Gramática Básica (Morfologia).", "Manter 100% de frequência nas 12 semanas iniciais (Construção de Hábito)"]
+                metas: ["Resolver 150 questões de Lógica (Foco em Teste de Mesa).", "Finalizar 100% da teoria de Gramática Básica (Morfologia).", "Manter 100% de frequência nas 12 semanas iniciais (Construção de Hábito)", "Checkpoint: Acertar >70% no mini-simulado de Lógica."]
             },
             {
                 id: 2, titulo: "Fundamentos de Dados e Texto", meses: "Mês 4 a 6", color: "indigo",
@@ -75,11 +76,11 @@
                     { dia: "Qui", mat: "Língua Portuguesa" },
                     { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["Dominar os conceitos de Normalização de Dados (1FN, 2FN e 3FN).s", "Alcançar > 80% de acerto em questões de Interpretação de Texto.", "Finalizar o mapeamento de Estruturas de Dados (Pilhas, Filas e Listas).", "Resolver 200 questões integradas de Português + TI."]
+                metas: ["Dominar os conceitos de Normalização de Dados (1FN, 2FN e 3FN).s", "Alcançar > 80% de acerto em questões de Interpretação de Texto.", "Criar um banco de dados local (MySQL/PostgreSQL) e realizar operações CRUD", "Resolver 200 questões integradas de Português + TI.", "Mapear Estruturas de Dados (Pilhas/Filas) com exemplos reais bancários."]
             },
             {
                 id: 3, titulo: "Programação e Finanças", meses: "Mês 7 a 9", color: "purple",
-                objetivo: "Codificação orientada à objeto e domínio do valor do dinheiro..",
+                objetivo: "Codificação orientada à objeto e domínio do valor do dinheiro (Java e Juros).",
                 semana: [
                     { dia: "Seg", mat: "Tecnologia da Informação" },
                     { dia: "Ter", mat: "Matemática Financeira" },
@@ -87,76 +88,78 @@
                     { dia: "Qui", mat: "Matemática Financeira" },
                     { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["Codificar 10 algoritmos básicos em Java para fixar sintaxe OO.", "Resolver 150 questões de Sistemas de Amortização (SAC/PRICE).", "Dominar comandos SQL de Join e Agrupamento (GroupBy/Having).", "Realizar o primeiro Simulado Parcial (TI + Mat. Financeira)."]
+                metas: ["Codificar 10 algoritmos básicos em Java para fixar sintaxe OO.", "Resolver 150 questões de Sistemas de Amortização (SAC/PRICE).", "Dominar comandos SQL de Join e Agrupamento (GroupBy/Having).", "Realizar o primeiro Simulado Parcial (TI + Mat. Financeira).","Resolver 100 questões de Juros Compostos sem calculadora.", "Implementar um sistema de \"Conta Corrente\" simples em Java (POO)."]
             },
             {
                 id: 4, titulo: "O Ecossistema Bancário Moderno", meses: "Mês 10 a 12", color: "green",
-                objetivo: "Ciência de dados aplicada e vocabulário técnico.",
+                objetivo: "Ciência de dados aplicada e vocabulário técnico (Python e Amortização).",
                 semana: [
                     { dia: "Seg", mat: "Tecnologia da Informação" },
                     { dia: "Ter", mat: "Noções de Probabilidade e Estatística" },
                     { dia: "Qua", mat: "Tecnologia da Informação" },
-                    { dia: "Qui", mat: "Língua Inglesa" },
+                    { dia: "Qui", mat: "Língua Inglesa + Matemática Financeira" },
                     { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["Manipular DataFrames em Python usando bibliotecas Pandas/NumPy.", "Criar uma lista de 200 termos técnicos em Inglês recorrentes na Cesgranrio.", "Resolver 100 questões de Estatística Descritiva.", "Realizar o segundo Simulado Parcial (TI + Probabilidade + Inglês).","Finalizar a leitura de todos os tópicos de Ciência de Dados do edital."]
+                metas: ["Manipular DataFrames em Python usando bibliotecas Pandas/NumPy.", "Criar uma lista de 200 termos técnicos em Inglês recorrentes na Cesgranrio (+ Leitura de documentação).", "Resolver 100 questões de Estatística Descritiva.", "Criar um script Python para ler um CSV de transações bancárias (Pandas)..","Finalizar a leitura de todos os tópicos de Ciência de Dados do edital." , "Construir planilhas de evolução PRICE e SAC manualmente."]
             },
             {
-                id: 5, titulo: "Arquitetura e Nuvem", meses: "Mês 13 a 15", color: "warm-gray",
-                objetivo: "Visão sistêmica, escalabilidade e probabilidade avançada.",
+                id: 5, titulo: "Engenharia e Nuvem", meses: "Mês 13 a 15", color: "warm-gray",
+                objetivo: "Visão sistêmica, arquitetura moderna e probabilidade avançada.",
                 semana: [
                     { dia: "Seg", mat: "Tecnologia da Informação" },
-                    { dia: "Ter", mat: "Noções de Probabilidade e Estatística" },
+                    { dia: "Ter", mat: "Noções de Probabilidade e Estatística + Língua Inglesa" },
                     { dia: "Qua", mat: "Tecnologia da Informação" },
-                    { dia: "Qui", mat: "Noções de Probabilidade e Estatística" },
+                    { dia: "Qui", mat: "Noções de Probabilidade e Estatística + Língua Portuguesa" },
                     { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["Diferenciar com 100% de precisão modelos IaaS, PaaS e SaaS.", "Resolver 100 questões de Probabilidade Condicional e Teorema de Bayes.", "Mapear os Status Codes HTTP e Verbos REST mais cobrados.", "Realizar o terceiro Simulado Parcial (TI + Probabilidade Avançada).", "Finalizar a leitura de todos os tópicos de Arquitetura e Nuvem do edital.","Consolidar o entendimento de Microservices vs Monólitos."]
+                metas: ["Diferenciar com 100% de precisão modelos IaaS, PaaS e SaaS com exemplos de AWS/Azure.", "Resolver 100 questões de Probabilidade Condicional e Teorema de Bayes.", "Mapear os Status Codes HTTP e Verbos REST mais cobrados.", "Desenhar um diagrama de Microsserviços para um sistema de PIX.", "Finalizar a leitura de todos os tópicos de Arquitetura e Nuvem do edital.","Consolidar o entendimento de Microservices vs Monólitos."]
             },
             {
-                id: 6, titulo: "xxxxxxxx", meses: "xxxxxxx", color: "green",
-                objetivo: "xxxxxxxxxxxxxxxxxxxx.",
+                id: 6, titulo: "Governança, Ética e Agilidade", meses: "Mês 16 a 18", color: "dark-blue",
+                objetivo: "Gestão, normas éticas e conformidade bancária (Foco: Compliance e Gestão).",
                 semana: [
-                    { dia: "Seg", mat: "Governança (ITIL/COBIT)" },
-                    { dia: "Ter", mat: "Estatística e Probabilidade" },
-                    { dia: "Qua", mat: "Revisão Geral" },
-                    { dia: "Qui", mat: "Simulado Completo" },
-                    { dia: "Sex", mat: "Correção de Simulado" }
+                    { dia: "Seg", mat: "Tecnologia da Informação" },
+                    { dia: "Ter", mat: " Ética e Compliance." },
+                    { dia: "Qua", mat: "Tecnologia da Informação" },
+                    { dia: "Qui", mat: " Ética e Compliance." },
+                    { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["Processos ITIL 4", "Distribuição Binomial", "Gestão do Tempo"]
+                metas: ["Leitura completa e fichamento da LGPD e Lei de Lavagem de Dinheiro..", "Memorizar ritos do Scrum e métricas do Kanban.", "Resolver 100 questões sobre Lavagem de Dinheiro (Lei 9.613).", "Simulado de Governança (ITIL/COBIT).", "Memorizar as Práticas da ITIL v4 e as 4 Dimensões do Gerenciamento, com foco especial em Gerenciamento de Incidentes, Mudanças e Nível de Serviço."]
             },
             {
-                id: 7, titulo: "xxxxxxxx", meses: "xxxxxxx", color: "green",
-                objetivo: "xxxxxxxxxxxxxxxxxxxx.",
+                id: 7, titulo: "Estudo Reverso e Redação", meses: "Mês 19 a 21", color: "emerald",
+                objetivo: "Velocidade de prova e correção de lacunas residuais.",
                 semana: [
-                    { dia: "Seg", mat: "Governança (ITIL/COBIT)" },
-                    { dia: "Ter", mat: "Estatística e Probabilidade" },
-                    { dia: "Qua", mat: "Revisão Geral" },
-                    { dia: "Qui", mat: "Simulado Completo" },
-                    { dia: "Sex", mat: "Correção de Simulado" }
+                    { dia: "Seg", mat: "Tecnologia da Informação" },
+                    { dia: "Ter", mat: "Básicas" },
+                    { dia: "Qua", mat: "Tecnologia da Informação" },
+                    { dia: "Qui", mat: "Redação" },
+                    { dia: "Sex", mat: "Tecnologia da Informação" }
                 ],
-                metas: ["Processos ITIL 4", "Distribuição Binomial", "Gestão do Tempo"]
+                metas: ["Alcançar média de acertos > 75% em todas as baterias de TI.", "Resolver 2.500 questões no trimestre", "Reduzir o tempo médio de resolução para 2,5 minutos por questão.", "Produzir 1 redação por semana sobre tecnologia/bancos."]
             },
             {
-                id: 8, titulo: "xxxxxxxx", meses: "xxxxxxx", color: "green",
-                objetivo: "xxxxxxxxxxxxxxxxxxxx.",
+                id: 8, titulo: "Simulação Total e Reta Final", meses: "Mês 22 a 24", color: "yellow",
+                objetivo: "Preparação para a prova final (Foco: Ajuste Fino e Psicológico).",
                 semana: [
-                    { dia: "Seg", mat: "Governança (ITIL/COBIT)" },
-                    { dia: "Ter", mat: "Estatística e Probabilidade" },
-                    { dia: "Qua", mat: "Revisão Geral" },
-                    { dia: "Qui", mat: "Simulado Completo" },
-                    { dia: "Sex", mat: "Correção de Simulado" }
+                    { dia: "Seg", mat: "Revisão Ativa + Tecnologia da Informação" },
+                    { dia: "Ter", mat: "Revisão Ativa + Comportamentos Éticos e Compliance" },
+                    { dia: "Qua", mat: "Revisão Ativa + Matemática Financeira e Estatística" },
+                    { dia: "Qui", mat: "Revisão Ativa + Lingua Portuguesa" },
+                    { dia: "Sex", mat: "Simulado Geral." }
                 ],
-                metas: ["Processos ITIL 4", "Distribuição Binomial", "Gestão do Tempo"]
+                metas: ["Realizar 10 simulados completos com preenchimento de gabarito.", "Estabilizar média de acertos em TI acima de 85%.", "Simular o dia da prova (Alimentação, tempo e silêncio).", "Memorizar todas as fórmulas financeiras e estatísticas para prova."]
             }
 
         ];
 
         const dbEscada = [
             { id: 1, titulo: "Nível 1: Alicerce", desc: "A base fundamental.", topicos: ["Lógica", "Algoritmos", "Estrutura Dados"] },
-            { id: 2, titulo: "Nível 2: Coração da Prova", desc: "Onde a Cesgranrio ataca com código.", topicos: ["Java SE (POO)", "Bancos Relacionais", "Python"] },
-            { id: 3, titulo: "Nível 3: O Mundo Web", desc: "Sistemas e arquitetura moderna.", topicos: ["APIs REST", "Microsserviços", "Agilidade (Scrum)"] },
-            { id: 4, titulo: "Nível 4: Avançado & Decoreba", desc: "Diferenciais para o topo da lista.", topicos: ["Governança (ITIL)", "Cloud/DevSecOps", "Estatística"] }
+            { id: 2, titulo: "Nível 2: Coração da Prova", desc: "Onde a Cesgranrio ataca com código.", topicos: [ "Bancos Relacionais", "Python", "SQL ANSI", "Modelagem ER e Normalização"] },
+            { id: 3, titulo: "Nível 3: Linguagens", desc: "Desenvolvimento de software.", topicos: ["Java SE (POO)","APIs REST", "Microsserviços", "Agilidade (Scrum)", "Análise de Dados"] },
+            { id: 4, titulo: "Nível 4: Arquitetura", desc: "Sistemas e arquitetura moderna.", topicos: ["Microsserviços", "Web Services", "APIs REST e Cloud Computing."] },
+            { id: 5, titulo: "Nível 5: Gestão", desc: "Gestão de projetos e governança.", topicos: ["Scrum (Agilidade)", "ITIL e COBIT (Governança)."] },
+            { id: 6, titulo: "Nível 6: Avançado & Decoreba", desc: "Diferenciais para o topo da lista.", topicos: ["Governança (ITIL)", "Cloud/DevSecOps", "Estatística"] }
         ];
 
         const dbChecklist = [
