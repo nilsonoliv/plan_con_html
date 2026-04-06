@@ -152,15 +152,88 @@
             }
 
         ];
-
-        const dbEscada = [
+      /*  const dbEscada = [
             { id: 1, titulo: "Nível 1: Alicerce", desc: "A base fundamental.", topicos: ["Lógica", "Algoritmos", "Estrutura Dados"] },
             { id: 2, titulo: "Nível 2: Coração da Prova", desc: "Onde a Cesgranrio ataca com código.", topicos: [ "Bancos Relacionais", "Python", "SQL ANSI", "Modelagem ER e Normalização"] },
             { id: 3, titulo: "Nível 3: Linguagens", desc: "Desenvolvimento de software.", topicos: ["Java SE (POO)","APIs REST", "Microsserviços", "Agilidade (Scrum)", "Análise de Dados"] },
             { id: 4, titulo: "Nível 4: Arquitetura", desc: "Sistemas e arquitetura moderna.", topicos: ["Microsserviços", "Web Services", "APIs REST e Cloud Computing."] },
             { id: 5, titulo: "Nível 5: Gestão", desc: "Gestão de projetos e governança.", topicos: ["Scrum (Agilidade)", "ITIL e COBIT (Governança)."] },
             { id: 6, titulo: "Nível 6: Avançado & Decoreba", desc: "Diferenciais para o topo da lista.", topicos: ["Governança (ITIL)", "Cloud/DevSecOps", "Estatística"] }
-        ];
+        ];*/
+                //  BANCO DE DADOS LOCAL: O Edital (Checklist) 
+                //código da nova ABA PROGRESSO ESTRATÉGICO
+        const dbEscada = [
+            // TI
+            { id: 'c1', area: 'ti', priority: 'quente', title: 'Bancos de Dados - SQL: Select, Insert, Update, Delete, Joins, Group By, Subqueries' },
+            { id: 'c2', area: 'ti', priority: 'quente', title: 'Bancos de Dados: Modelagem Relacional e Normalização (1FN, 2FN, 3FN)' },
+            { id: 'c3', area: 'ti', priority: 'quente', title: 'Linguagens - Java SE 21: Sintaxe, Herança, Polimorfismo, Interfaces' },
+            { id: 'c4', area: 'ti', priority: 'quente', title: 'Linguagens - Python 3.9: Bibliotecas Pandas e NumPy' },
+            { id: 'c5', area: 'ti', priority: 'quente', title: 'Agilidade: SCRUM (Framework completo: Papéis, Cerimônias e Artefatos)' },
+            { id: 'c6', area: 'ti', priority: 'quente', title: 'Desenvolvimento Web: Padrões REST, Verbos HTTP (GET, POST, etc.) e Status Codes' },
+            { id: 'c7', area: 'ti', priority: 'quente', title: 'Arquitetura Microsserviço, Nuvem Pública/Privada' },
+            { id: 'c30', area: 'ti', priority: 'quente', title: 'Arquitetura de Software: Microsserviços e Arquitetura em Camadas (MVC)' },
+            { id: 'c31', area: 'ti', priority: 'quente', title: 'Comportamentos Digitais: Mindset de Crescimento e OKRs (Objectives and Key Results)' },
+            { id: 'c32', area: 'ti', priority: 'quente', title: 'Agilidade: Kanban e Fluxo de Valor)' },
+            { id: 'c33', area: 'ti', priority: 'quente', title: 'Segurança: Segurança Cibernética (Resolução CMN 4893)' },
+            { id: 'c12', area: 'ti', priority: 'morno', title: 'Engenharia de Software: Engenharia de Requisitos (Funcionais vs Não Funcionais)' },
+            { id: 'c35', area: 'ti', priority: 'morno', title: 'Engenharia de Software: UML (Diagramas de Classe e Caso de Uso).' },
+            { id: 'c36', area: 'ti', priority: 'morno', title: 'Desenvolvimento Web: JSON, XML e Sistemas Distribuídos' },
+            { id: 'c37', area: 'ti', priority: 'morno', title: 'Cloud Computing: IaaS, PaaS, SaaS, Nuvem Pública e Privada' },
+            { id: 'c13', area: 'ti', priority: 'morno', title: 'Estrutura de Dados: Busca Binária, Ordenação (Bubble, Selection, Insertion)' },
+            { id: 'c34', area: 'ti', priority: 'morno', title: 'Estrutura de Dados: Pilha, Fila, Lista Encadeada e Noções de Árvore Binária' },
+            { id: 'c14', area: 'ti', priority: 'morno', title: 'Teste de Software: Teste de Unidade, Integração e Regressão' },
+            { id: 'c15', area: 'ti', priority: 'morno', title: 'Sistemas Operacionais: Processos (Comunicação/Escalonamento) e Gerência de Memória.' },
+            { id: 'c38', area: 'ti', priority: 'morno', title: 'Sistemas Operacionais: Windows 10 e Ambiente Linux (SUSE).' },
+            { id: 'c16', area: 'ti', priority: 'morno', title: 'Governança de TI: ITIL v4 e COBIT 2019 (Visão Geral)' },
+            { id: 'c21', area: 'ti', priority: 'frio', title: 'Linguagens: Cobol, R, Scala, Objective-C, Swift' },
+            { id: 'c39', area: 'ti', priority: 'morno', title: 'Linguagens: JavaScript e TypeScript 4.X' },
+            { id: 'c40', area: 'ti', priority: 'morno', title: 'Comportamentos Digitais: Design Thinking e Ciência de Dados (Conceitos)' },
+            { id: 'c41', area: 'ti', priority: 'morno', title: 'Comportamentos Digitais: Metodologias Ágeis e Lean Manufacturing' },
+            { id: 'c42', area: 'ti', priority: 'frio', title: 'Linguagens/Frameworks: C# 12, .NET, AngularJS, Angular, JSF, JSP, Ajax' },
+            { id: 'c43', area: 'ti', priority: 'frio', title: 'Sistemas Operacionais Legados: IBM z/OS' },
+            { id: 'c44', area: 'ti', priority: 'frio', title: 'Outros: Portais corporativos (RSS, Portlets), Acessibilidade (e-MAG) e Pontos de Função.' },            
+            { id: 'c45', area: 'ti', priority: 'frio', title: 'Agilidade: SAFe, Nexus, Management 3.0 e Lean UX' },
+            { id: 'c22', area: 'ti', priority: 'frio', title: 'Desenvolvimento Web: Quarkus, SOA, Web Services (UDDI, WSDL, SOAP)' },
+            { id: 'c23', area: 'ti', priority: 'frio', title: 'Arquitetura de Computadores: CPU, Base Binária, Endereçamento e Hierarquia de Memória' },
+            { id: 'c24', area: 'ti', priority: 'frio', title: 'Qualidade de Software: CMMI e MPS-BR (Conceitos e Níveis)' },
+            
+            // CONHECIMENTOS BÁSICOS
+            { id: 'c8', area: 'basico', priority: 'quente', title: 'Português: Compreensão e Interpretação de Textos (O foco principal da banca)' },
+            { id: 'c45', area: 'basico', priority: 'quente', title: 'Português: Concordância (Verbal e Nominal) e Regência' },
+            { id: 'c46', area: 'basico', priority: 'quente', title: 'Português: Emprego do sinal indicativo de crase' },
+            { id: 'c47', area: 'basico', priority: 'quente', title: 'Compliance: Sigilo Bancário (LC 105/2001) e Segurança da Informação' },
+            { id: 'c48', area: 'basico', priority: 'quente', title: 'Estatística: Medidas de Tendência Central (Média, Moda e Mediana)' },
+            { id: 'c9', area: 'basico', priority: 'quente', title: 'Matemática Financeira: Juros Compostos (Montante, Taxas, Prazos)' },
+            { id: 'c10', area: 'basico', priority: 'quente', title: 'Estatística: Probabilidade de Laplace/Condicional' },
+            { id: 'c11', area: 'basico', priority: 'quente', title: 'Compliance: LGPD (Lei 13.709/18) e Prevenção à Lavagem de Dinheiro (Lei 9.613/98)' },
+
+            { id: 'c17', area: 'basico', priority: 'morno', title: 'Português: Coesão, Coerência e Organização Textual' },
+            { id: 'c49', area: 'basico', priority: 'morno', title: 'Português: Pontuação e Colocação Pronominal' },
+            { id: 'c50', area: 'basico', priority: 'morno', title: 'Estatística: Probabilidade Básica (Laplace, Eventos, Espaço Amostral)' },
+            { id: 'c51', area: 'basico', priority: 'morno', title: 'Compliance: Artigo 37 da Constituição Federal (Princípios da ADM Pública)' },
+            { id: 'c52', area: 'basico', priority: 'morno', title: 'Compliance: Legislação Anticorrupção (Lei 12.846/13 e Dec. 11.129/22)' },
+            { id: 'c18', area: 'basico', priority: 'morno', title: 'Mat. Financeira: Equivalência de Capitais, Séries Uniformes' },
+            { id: 'c19', area: 'basico', priority: 'morno', title: 'Estatística: Medidas de Dispersão (Variância e Desvio Padrão)' },
+            { id: 'c20', area: 'basico', priority: 'morno', title: 'Inglês: Vocabulário Fundamental e Gramática Básica para Interpretação' },
+            
+            { id: 'c25', area: 'basico', priority: 'frio', title: 'Português: Ortografia oficial, Acentuação e Redação Oficial' },
+            { id: 'c54', area: 'basico', priority: 'frio', title: 'Português: Argumentação e Persuasão' },
+            { id: 'c55', area: 'basico', priority: 'frio', title: 'Matemática Financeira: Juros Simples, Descontos e Progressões (PA/PG)' },
+            { id: 'c56', area: 'basico', priority: 'frio', title: 'Estatística: Distribuição Binomial e Medidas de Posição (Quartis/Percentis)' },
+            { id: 'c57', area: 'basico', priority: 'frio', title: 'Compliance: Ética Profissional, Assédio Moral/Sexual e PRASC CAIXA' },
+            { id: 'c58', area: 'basico', priority: 'frio', title: 'Compliance: Atualidades do Mercado Financeiro' },
+            { id: 'c26', area: 'basico', priority: 'frio', title: 'Mat. Financeira: Juros Simples, Descontos, PA/PG' },
+            
+            // Digitais
+            { id: 'c27', area: 'digital', priority: 'quente', title: 'Digitais: Mindset Ágil, OKRs, Pensamento Computacional' },
+            { id: 'c53', area: 'digital', priority: 'morno', title: 'Digitais: Inteligência Emocional e Resolução de Problemas Complexos.' },
+            { id: 'c28', area: 'digital', priority: 'morno', title: 'Digitais: Design Thinking, Ciência de Dados (Conceitos), I.E.' },
+            { id: 'c29', area: 'digital', priority: 'frio', title: 'Digitais: Sustentabilidade (ODS), CX' },
+            { id: 'c58', area: 'digital', priority: 'frio', title: 'Digitais: Intraempreendedorismo, Liderança e Aprendizagem Contínua' }
+        ]; // Coloquei o codigo da variavel const checklistData dentro desta função para evitar que seja exposta globalmente, já que é um dado estático e não precisa ser mutável ou acessível fora do escopo de renderização do checklist.
+
+
+
 
         const dbChecklist = [
             { idGroup: 'g1', area: "TI - Linguagens e Bancos", itens: [
@@ -177,7 +250,7 @@
 
         // Variáveis de controle de instâncias e estado local da UI
         let chartEvolucaoInstance = null; // Guarda a instância do Chart.js para permitir destruição e re-renderização
-        let escadaExpandida = 1; // Guarda qual nó da aba Escada está aberto no formato Accordion
+        //let escadaExpandida = 1; // Guarda qual nó da aba Escada está aberto no formato Accordion
 
         // =========================================================================
         // 3. MOTORES DE RENDERIZAÇÃO E CONTROLE DE EVENTOS
@@ -319,7 +392,7 @@
         function fecharModalFora(e) { if(e.target.id === 'modal-roadmap') fecharModal(); }
 
         /**
-         * Renderiza a Escada de TI Gamificada.
+         * Renderiza o Progresso Estratégico.
          * Cruza dbEscada (textos base) com estadoApp.escada (status: bloqueado/ativo/concluido).
          */
         function renderEscada() {
@@ -367,16 +440,16 @@
         }
 
         // Sistema de Accordion (Apenas um nó da escada aberto por vez)
-        function toggleEscada(id) {
+        /*function toggleEscada(id) {
             const state = estadoApp.escada.find(n => n.id === id);
             if (state && state.status !== 'bloqueado') {
                 escadaExpandida = escadaExpandida === id ? null : id;
                 renderEscada();
             }
-        }
+        }*/
 
         // Lógica de desbloqueio do próximo nível ao concluir o atual
-        function concluirEscada(event, id) {
+       /* function concluirEscada(event, id) {
             event.stopPropagation();
             const curr = estadoApp.escada.find(n => n.id === id);
             if(curr) curr.status = 'concluido';
@@ -385,8 +458,12 @@
             renderEscada();
             showToast("🏆 Nível da escada conquistado!");
             if(window.salvarNaNuvem) window.salvarNaNuvem();
-        }
+        }*/
 
+
+
+
+        
         /**
          * Renderiza o Checklist de estudos focado na estatística da Cesgranrio.
          * Verifica também se um bloco inteiro foi concluído para atribuir a badge.
